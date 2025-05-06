@@ -1,4 +1,4 @@
-# PS2 Startup Style Wallpapers
+# PS2 Startup Style Wallpaper
 
 ![Screenshot](Screenshot.png)
 
@@ -21,4 +21,4 @@ This wallpaper can be used with Lively Wallpaper (available on Windows).
 2.  Click on the "+" (Add Wallpaper) button.
 3.  In the "Enter URL" field, paste the link to the live demo: https://whitesun13.github.io/PS2-Live-Wallpaper/
 4.  Click the arrow button (or "OK") to add.
-5.  Select the newly added wallpaper from your Lively library.
+5.  Select the newly added wallpaper from library.
