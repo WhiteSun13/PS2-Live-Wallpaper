@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Геометрический Туман - Живые Обои</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #000;
+            position: relative;
+        }
+        canvas {
+            display: block;
+        }
+
+        /* --- Intro styles --- */
+        #intro-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            opacity: 1;
+            z-index: 100;
+            pointer-events: none;
+            transition: opacity 1.5s ease-out;
+        }
+
+        #intro-text {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 2.5em;
+            font-weight: bold;
+            text-shadow:
+               -1px -1px 0 #000,
+                1px -1px 0 #000,
+               -1px  1px 0 #000,
+                1px  1px 0 #000,
+               -2px -2px 0 #000,
+                2px -2px 0 #000,
+               -2px  2px 0 #000,
+                2px  2px 0 #000;
+
+            opacity: 0;
+            z-index: 101;
+            pointer-events: none;
+            text-align: center;
+            white-space: nowrap;
+            transition: opacity 1s ease-in-out;
+        }
+        .hidden {
+             opacity: 0 !important;
+             /* display: none*/
+        }
+        .visible {
+            opacity: 1 !important;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Intro elements -->
+    <div id="intro-overlay"></div>
+    <div id="intro-text">Sony Computer Entertainment</div>
+    <!-- Audio -->
+    <audio id="intro-audio" src="ps2.mp3" preload="auto"></audio>
+
+    <!-- Canvas -->
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.176.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.176.0/examples/jsm/"
+            }
+        }
+    </script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
