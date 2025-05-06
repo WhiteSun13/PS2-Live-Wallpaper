@@ -215,10 +215,10 @@ function init() {
 
     // --- Loading textures for ray heads ---
     try {
-        flareTexture = textureLoader.load('Flare.png');
+        flareTexture = textureLoader.load('flare.png');
         console.log("Flare texture loaded successfully.");
     } catch (e) {
-        console.warn("Load error: Flare.png");
+        console.warn("Load error: flare.png");
     }
 
     // --- Glowing dots and tails ---
